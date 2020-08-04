@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Lab2_1_AspNetMVC_DailyBlogger.Models.BlogPost>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" context="width-device-width" />
+    <title>Blog Posts</title>
+</head>
+<body>
+    <p>
+
+    </p>
+
+    @foreach (var item in Model)
+    {
+        <div>
+            @Html.DisplayFor(m => item.blogTitle)
+            <p>@Html.DisplayFor(m => item.content)</p>
+            <p>@Html.DisplayFor(m => item.blogDate)</p>
+        </div>
+    }
+
+
+
+
+</body>
+</html>

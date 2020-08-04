@@ -1,0 +1,14 @@
+USE Master;
+GO
+
+CREATE DATABASE Blog;
+GO
+USE Blog;
+CREATE TABLE BlogPost(
+
+id				INT				PRIMARY KEY		IDENTITY,
+blogTitle		VARCHAR(MAX)	NOT NULL,
+content			TEXT			NOT NULL,
+blogDate		DATETIME		NOT NULL
+
+)
