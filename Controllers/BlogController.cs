@@ -45,6 +45,7 @@ namespace Lab2_1_AspNetMVC_DailyBlogger.Controllers
             BlogPost blogPost = _context.blogPost.Find(id);
             return View(blogPost);
         }
+
         public IActionResult Edit(int id)
         {
             BlogPost blogPost = _context.blogPost.Find(id);
